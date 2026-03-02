@@ -1,0 +1,215 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 40px;
+  margin: 0;
+}
+
+/* Main page container card*/
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 22px 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.14);
+  max-width: 950px;
+  margin: 0 auto 30px auto;
+}
+
+h1, h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+h3 {
+  margin: 0;
+  color: #222;
+}
+
+.meta {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.section {
+  margin-top: 18px;
+  padding-top: 12px;
+  border-top: 1px solid #ddd;
+}
+
+.footer {
+  margin-top: 14px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+code {
+  background: #f2f2f2;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Form layout (keeps your .row / .field structure) */
+.row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin-top: 16px;
+}
+
+.field {
+  flex: 1 1 250px;
+  min-width: 220px;
+}
+
+label {
+  display: block;
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  opacity: 0.92;
+}
+
+button.secondary {
+  background: #777;
+}
+
+/* Messages */
+.error {
+  margin-top: 10px;
+  color: #b00020;
+  font-weight: bold;
+  background: #ffe8ea;
+  border: 1px solid #ffc0c6;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+.ok {
+  margin-top: 10px;
+  color: #0b6b0b;
+  font-weight: bold;
+  background: #eaffea;
+  border: 1px solid #bff0bf;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+/* Nav buttons (links styled as buttons) */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+a.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: #1f5fbf;
+  color: #fff;
+  font-weight: bold;
+}
+
+a.btn:hover { opacity: 0.92; }
+
+a.btn.secondary {
+  background: #666;
+}
+
+/* Record cards (search results) */
+.records {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.record-card {
+  background: #fff;
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+  padding: 14px 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.record-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.record-title {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.pill {
+  background: #f2f6ff;
+  border: 1px solid #d9e5ff;
+  color: #1f5fbf;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.record-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 14px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.record-grid .k {
+  color: #555;
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  body { padding: 18px; }
+  .card { padding: 18px; }
+  .record-grid { grid-template-columns: 1fr; }
+}
